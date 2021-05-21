@@ -36,9 +36,9 @@ For RaspberryPi
  
  rosdep update
 
- mkdir -p ~/ros_catkin_ws
+ mkdir -p ~/catkin_ws
  
- cd ~/ros_catkin_ws
+ cd ~/catkin_ws
 
 
 NO GUI (recommended)
@@ -65,7 +65,7 @@ NO GUI (recommended)
 ----------------------------------
 
 
- cd ~/ros_catkin_ws
+ cd ~/catkin_ws
  rosdep install -y --from-paths src --ignore-src --rosdistro noetic -r --os=debian:buster
 
 
