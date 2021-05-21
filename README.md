@@ -46,7 +46,7 @@ NO GUI (recommended)
 
  rosinstall_generator ros_comm --rosdistro noetic --deps --wet-only --tar > noetic-ros_comm-wet.rosinstall
  
- wstool init src melodic-ros_comm-wet.rosinstall
+ wstool init src noetic-ros_comm-wet.rosinstall
  
 
 -------------------------------------
@@ -71,7 +71,7 @@ NO GUI (recommended)
 
 
 
- sudo ./src/catkin/bin/catkin_make_isolated --install -DCMAKE_BUILD_TYPE=Release --install-space /opt/ros/melodic -j2
+ sudo ./src/catkin/bin/catkin_make_isolated --install -DCMAKE_BUILD_TYPE=Release --install-space /opt/ros/noetic -j2
 
 (If your raspbeery pi crushes during the this build, try increasing the swap
 
@@ -80,9 +80,9 @@ NO GUI (recommended)
 *1024 depends on the RAM on your raspberry pi
 )
 
- source /opt/ros/melodic/setup.bash
+ source /opt/ros/noetic/setup.bash
 
- echo "source /opt/ros/melodic/setup.bash" >> ~/.bashrc
+ echo "source /opt/ros/noetic/setup.bash" >> ~/.bashrc
 
  source ~/.bashrc
 
