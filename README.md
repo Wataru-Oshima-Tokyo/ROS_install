@@ -66,6 +66,7 @@ NO GUI (recommended)
 
 
  cd ~/catkin_ws
+ 
  rosdep install -y --from-paths src --ignore-src --rosdistro noetic -r --os=debian:buster
 
 
