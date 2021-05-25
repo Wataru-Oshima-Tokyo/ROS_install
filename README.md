@@ -22,7 +22,7 @@ echo "source /opt/ros/noetic/setup.bash" >> ~/.bashrc
 source ~/.bashrc
 
 
-For RaspberryPi 
+# For RaspberryPi 
 
  sudo sh -c 'echo "deb http://packages.ros.org/ros/ubuntu $(lsb_release -sc) main" > /etc/apt/sources.list.d/ros-latest.list'
 
@@ -69,12 +69,13 @@ NO GUI (recommended)
  
  rosdep install -y --from-paths src --ignore-src --rosdistro noetic -r --os=debian:buster
 
- //sudo pip3 install -U catkin_tools
+sudo ./src/catkin/bin/catkin_make_isolated --install -DCMAKE_BUILD_TYPE=Release --install-space /opt/ros/noetic -j2
 
- sudo apt-get install python3-catkin-tools
+(If you failed to do it above, try  the below one
 
-
- sudo ./src/catkin/bin/catkin_make_isolated --install -DCMAKE_BUILD_TYPE=Release --install-space /opt/ros/noetic -j2
+ catkin build --unbuilt
+ 
+ )
 
 (If your raspbeery pi crushes during the this build, try increasing the swap
 
@@ -90,7 +91,7 @@ NO GUI (recommended)
  source ~/.bashrc
 
 
----------Adding Released Packages----------
+# ---------Adding Released Packages----------
 
  cd catkin_ws
 
@@ -98,12 +99,12 @@ NO GUI (recommended)
 
 *ros_comm, ros_controll, joystick_driveres are the packages added into this workspace
 
----update it ----
+# ---update it ----
 
  wstool merge -t src noetic-custom_ros.rosinstall
 
 
----resolve the new dependencies-----
+# ---resolve the new dependencies-----
 
  rosdep install --from-paths src --ignore-src --rosdistro noetic -y -r --os=debian:buster
 
