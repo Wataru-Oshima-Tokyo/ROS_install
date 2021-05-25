@@ -69,7 +69,7 @@ NO GUI (recommended)
  
  rosdep install -y --from-paths src --ignore-src --rosdistro noetic -r --os=debian:buster
 
-sudo ./src/catkin/bin/catkin_make_isolated --install -DCMAKE_BUILD_TYPE=Release --install-space /opt/ros/noetic -j2
+sudo src/catkin/bin/catkin_make_isolated --install -DCMAKE_BUILD_TYPE=Release --install-space /opt/ros/noetic -j1 -DPYTHON_EXECUTABLE=/usr/bin/python3
 
 (If you failed to do it above, try  the below one
 
