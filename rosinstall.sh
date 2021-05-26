@@ -6,7 +6,7 @@ curl -sSL 'http://keyserver.ubuntu.com/pks/lookup?op=get&search=0xC1CF6E31E6BADE
 
 sudo apt update
 
-sudo apt install ros-noetic-desktop
+sudo apt install ros-noetic-ros-base
 
 source /opt/ros/noetic/setup.bash
 
