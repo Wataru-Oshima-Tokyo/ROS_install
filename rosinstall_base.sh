@@ -10,6 +10,8 @@ sudo apt install ros-noetic-ros-base
 
 sudo apt install ros-noetic-map-server
 
+sudo apt install ros-noetic-cv-bridge
+
 source /opt/ros/noetic/setup.bash
 
 echo "source /opt/ros/noetic/setup.bash" >> ~/.bashrc
