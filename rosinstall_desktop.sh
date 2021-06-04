@@ -10,6 +10,8 @@ sudo apt install ros-noetic-desktop
 
 sudo apt install ros-noetic-map-server
 
+sudo apt install ros-noetic-gazebo-ros
+
 sudo apt install ros-noetic-cv-bridge
 
 sudo apt install ros-noetic-camera-info-manager
