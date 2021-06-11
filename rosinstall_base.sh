@@ -16,6 +16,8 @@ sudo apt install ros-noetic-image-transport
 
 sudo apt install ros-noetic-camera-info-manager
 
+sudo apt install ros-noetic-interactive-markers
+
 source /opt/ros/noetic/setup.bash
 
 echo "source /opt/ros/noetic/setup.bash" >> ~/.bashrc
