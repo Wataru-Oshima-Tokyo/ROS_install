@@ -24,8 +24,6 @@ rosdep install -y --from-paths src --ignore-src --rosdistro noetic -r --os=debia
 
 sudo src/catkin/bin/catkin_make_isolated --install -DCMAKE_BUILD_TYPE=Release --install-space /opt/ros/noetic -j1 -DPYTHON_EXECUTABLE=/usr/bin/python3
 
-nano /etc/dphys-swapfile/ CONF_SWAPSIZE=1024 *1024 depends on the RAM on your raspberry pi )
-
 source /opt/ros/noetic/setup.bash
 
 echo "source /opt/ros/noetic/setup.bash" >> ~/.bashrc
