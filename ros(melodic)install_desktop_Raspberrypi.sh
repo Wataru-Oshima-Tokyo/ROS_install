@@ -23,7 +23,9 @@ cd ~/catkin_ws
 rosdep install -y --from-paths src --ignore-src --rosdistro melodic -r --os=debian:buster
 
 
-sudo /src/catkin/bin/catkin_make_isolated --install -DCMAKE_BUILD_TYPE=Release --install-space /opt/ros/melodic -j2 -DPYTHON_EXECUTABLE=/usr/bin/python3
+echo "sudo /src/catkin/bin/catkin_make_isolated --install -DCMAKE_BUILD_TYPE=Release --install-space /opt/ros/melodic -j2 -DPYTHON_EXECUTABLE=/usr/bin/python3"
+
+catkin build
 
 source /opt/ros/melodic/setup.bash
 
