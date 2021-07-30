@@ -4,7 +4,7 @@ sudo apt-key adv --keyserver 'hkp://keyserver.ubuntu.com:80' --recv-key C1CF6E31
 
 sudo apt update
 
-sudo apt install -y python3-rosdep python3-rosinstall-generator python-wstool python3-rosinstall build-essential cmake
+sudo apt install -y python-rosdep python-rosinstall-generator python-wstool python-rosinstall build-essential cmake
 
 sudo rosdep init
 
@@ -23,9 +23,8 @@ cd ~/catkin_ws
 rosdep install -y --from-paths src --ignore-src --rosdistro melodic -r --os=debian:buster
 
 
-echo "sudo /src/catkin/bin/catkin_make_isolated --install -DCMAKE_BUILD_TYPE=Release --install-space /opt/ros/melodic -j2 -DPYTHON_EXECUTABLE=/usr/bin/python3"
+sudo ./src/catkin/bin/catkin_make_isolated --install -DCMAKE_BUILD_TYPE=Release --install-space /opt/ros/melodic -j2 -DPYTHON_EXECUTABLE=/usr/bin/python
 
-catkin build
 
 source /opt/ros/melodic/setup.bash
 
