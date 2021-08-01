@@ -32,6 +32,8 @@ git clone https://github.com/stonier/ecl_tools -b release/0.61-melodic
 git clone https://github.com/stonier/sophus -b release/1.1.x
 sudo rm -r image_common
 git clone https://github.com/ros-perception/image_common -b hydro-devel
+sudo rm -r navigation_msgs
+git clone https://github.com/ros-planning/navigation_msgs -b ros1
 
 cd ~/catkin_Ws
 
