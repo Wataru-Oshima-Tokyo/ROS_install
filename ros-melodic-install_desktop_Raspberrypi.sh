@@ -24,7 +24,7 @@ git clone https://github.com/ros-perception/image_pipeline
 sudo rm -r vision_opencv
 git clone https://github.com/ros-perception/vision_opencv -b melodic
 git clone https://github.com/ros/geometry2 -b melodic
-git clone https://github.com/ros-perception/pcl_ros
+git clone https://github.com/ros-perception/perception_pcl -b melodic-devel
 git clone https://github.com/ros-planning/navigation
 git clone https://github.com/stonier/ecl_core -b release/0.62-melodic
 git clone https://github.com/stonier/ecl_lite -b release/0.61-melodic
