@@ -1,7 +1,7 @@
 
 sudo apt update
 
-sudo apt install curl
+sudo apt install curl -y
 
 sudo sh -c 'echo "deb http://packages.ros.org/ros/ubuntu $(lsb_release -sc) main" > /etc/apt/sources.list.d/ros-latest.list'
 
@@ -11,15 +11,24 @@ curl -sSL 'http://keyserver.ubuntu.com/pks/lookup?op=get&search=0xC1CF6E31E6BADE
 
 sudo apt update
 
-sudo apt install ros-melodic-desktop
+sudo apt install ros-melodic-desktop -y
 
-sudo apt install ros-melodic-map-server
+sudo apt install ros-melodic-map-server -y
 
-sudo apt install ros-melodic-gazebo-ros
+sudo apt install ros-melodic-gazebo-ros -y
 
-sudo apt install ros-melodic-cv-bridge
+sudo apt install ros-melodic-cv-bridge -y
 
-sudo apt install ros-melodic-camera-info-manager
+sudo apt install ros-melodic-camera-info-manager -y
+
+sudo apt install ros-melodic-ecl -y
+
+sudo apt install libudev-dev -y
+
+sudo apt install libasio-dev -y
+
+sudo apt install ros-melodic-navigation -y
+
 
 source /opt/ros/melodic/setup.bash
 
