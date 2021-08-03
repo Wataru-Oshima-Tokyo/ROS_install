@@ -21,13 +21,15 @@ sudo apt install ros-melodic-cv-bridge -y
 
 sudo apt install ros-melodic-camera-info-manager -y
 
-sudo apt install ros-melodic-ecl -y
+sudo apt install ros-melodic-ecl ros-melodic-perception -y
 
 sudo apt install libudev-dev -y
 
 sudo apt install libasio-dev -y
 
 sudo apt install ros-melodic-navigation -y
+
+sudo apt install ros-melodic-controller-interface  ros-melodic-gazebo-ros-control ros-melodic-joint-state-controller ros-melodic-effort-controllers ros-melodic-joint-trajectory-controller -y
 
 
 source /opt/ros/melodic/setup.bash
