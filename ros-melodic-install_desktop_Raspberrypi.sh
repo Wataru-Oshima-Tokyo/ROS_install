@@ -41,6 +41,7 @@ git clone https://github.com/ros-controls/realtime_tools -b melodic-devel
 git clone https://github.com/ros-controls/control_toolbox -b melodic-devel
 git clone https://github.com/ros-drivers/four_wheel_steering_msgs
 git clone https://github.com/ros-controls/urdf_geometry_parser
+git clone https://github.com/ros-perception/pointcloud_to_laserscan -b lunar-devel
 
 
 
