@@ -23,7 +23,8 @@ cd ~/catkin_ws/src
 git clone https://github.com/ros-perception/image_pipeline 
 sudo rm -r vision_opencv
 git clone https://github.com/ros-perception/vision_opencv -b melodic
-git clone https://github.com/ros/geometry2 -b melodic
+sudo rm -r geometry2
+git clone https://github.com/ros/geometry2 -b melodic-devel
 git clone https://github.com/ros-perception/perception_pcl -b melodic-devel
 git clone https://github.com/ros-planning/navigation
 git clone https://github.com/stonier/ecl_core -b release/0.62-melodic
@@ -35,7 +36,6 @@ git clone https://github.com/ros-perception/image_common -b hydro-devel
 sudo rm -r navigation_msgs
 git clone https://github.com/ros-planning/navigation_msgs -b ros1
 git clone https://github.com/ros/joint_state_publisher.git 
-git clone https://github.com/cyberbotics/webots_ros -b melodic
 git clone https://github.com/ros-controls/ros_control
 git clone https://github.com/ros-controls/realtime_tools -b melodic-devel
 git clone https://github.com/ros-controls/control_toolbox -b melodic-devel
@@ -45,7 +45,7 @@ git clone https://github.com/ros-perception/pointcloud_to_laserscan -b lunar-dev
 
 
 
-cd ~/catkin_Ws
+cd ~/catkin_ws
 
 rosdep install -y --from-paths src --ignore-src --rosdistro melodic -r --os=debian:buster
 
