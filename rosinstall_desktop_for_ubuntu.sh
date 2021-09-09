@@ -10,16 +10,25 @@ curl -sSL 'http://keyserver.ubuntu.com/pks/lookup?op=get&search=0xC1CF6E31E6BADE
 
 sudo apt update
 
-sudo apt install ros-noetic-desktop
+sudo apt install ros-noetic-desktop -y
 
-sudo apt install ros-noetic-map-server
+sudo apt install ros-noetic-map-server -y
 
-sudo apt install ros-noetic-gazebo-ros
+sudo apt install ros-noetic-gazebo-ros -y
 
-sudo apt install ros-noetic-cv-bridge
+sudo apt install ros-noetic-cv-bridge -y
 
-sudo apt install ros-noetic-camera-info-manager
+sudo apt install ros-noetic-camera-info-manager -y
 
+sudo apt install ros-noetic-ecl ros-noetic-perception -y
+
+sudo apt install libudev-dev -y
+
+sudo apt install libasio-dev -y
+
+sudo apt install ros-noetic-navigation -y
+
+sudo apt install ros-noetic-controller-interface  ros-noetic-gazebo-ros-control ros-noetic-joint-state-controller ros-noetic-effort-controllers ros-noetic-joint-trajectory-controller -y
 source /opt/ros/noetic/setup.bash
 
 echo "source /opt/ros/noetic/setup.bash" >> ~/.bashrc
