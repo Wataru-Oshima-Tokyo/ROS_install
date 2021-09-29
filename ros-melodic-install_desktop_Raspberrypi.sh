@@ -26,6 +26,7 @@ git clone https://github.com/ros-perception/vision_opencv -b melodic
 sudo rm -r geometry2
 git clone https://github.com/ros/geometry2 -b melodic-devel
 git clone https://github.com/ros-perception/perception_pcl -b melodic-devel
+git clone https://github.com/ros-perception/pcl_msgs -b indigo-devel
 git clone https://github.com/ros-planning/navigation
 git clone https://github.com/stonier/ecl_core -b release/0.62-melodic
 git clone https://github.com/stonier/ecl_lite -b release/0.61-melodic
