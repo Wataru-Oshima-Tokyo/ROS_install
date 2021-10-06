@@ -56,6 +56,17 @@ rosdep update
 rosdep install --from-paths src --ignore-src -y --skip-keys "fastcdr rti-connext-dds-5.3.1 urdfdom_headers"
 
 cd ~/ros2_foxy/
-colcon build --symlink-install
+touch src/ros2/rviz/AMENT_IGNORE
+touch src/ros-visualization/AMENT_IGNORE
+touch src/ros2/system_tests/AMENT_IGNORE
+
+mkdir ~/.colcon
+touch ~/.colcon/defaults.yaml
+echo "build:
+  cmake-args:
+    - -DCMAKE_SHARED_LINKER_FLAGS='-latomic -lpython3.7m'
+    - -DCMAKE_EXE_LINKER_FLAGS='-latomic -lpython3.7m'
+    - -DCMAKE_BUILD_TYPE=RelWithDebInfo" >> ~/.colcon/defaults.yaml
+colcon build --symlink-install --packages-skip ros1_bridge
 
 echo "~/ros2_foxy/install/local_setup.bash" >> ~/.bashrc
