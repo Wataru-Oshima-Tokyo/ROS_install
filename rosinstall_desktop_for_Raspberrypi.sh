@@ -41,7 +41,7 @@ git clone https://github.com/ros-controls/control_toolbox -b noetic-devel
 git clone https://github.com/ros-drivers/four_wheel_steering_msgs
 git clone https://github.com/ros-controls/urdf_geometry_parser
 git clone https://github.com/ros-perception/pointcloud_to_laserscan -b lunar-devel
-
+sudo apt install libbullet-dev libpcl-dev -y
 
 
 sudo src/catkin/bin/catkin_make_isolated --install -DCMAKE_BUILD_TYPE=Release --install-space /opt/ros/noetic -j1 -DPYTHON_EXECUTABLE=/usr/bin/python3
