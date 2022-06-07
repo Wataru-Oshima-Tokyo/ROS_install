@@ -56,9 +56,9 @@ rosdep update
 rosdep install --from-paths src --ignore-src -y --skip-keys "fastcdr rti-connext-dds-5.3.1 urdfdom_headers"
 
 cd ~/ros2_foxy/
-touch src/ros2/rviz/AMENT_IGNORE
-touch src/ros-visualization/AMENT_IGNORE
-touch src/ros2/system_tests/AMENT_IGNORE
+#touch src/ros2/rviz/AMENT_IGNORE
+#touch src/ros-visualization/AMENT_IGNORE
+#touch src/ros2/system_tests/AMENT_IGNORE
 
 mkdir ~/.colcon
 touch ~/.colcon/defaults.yaml
