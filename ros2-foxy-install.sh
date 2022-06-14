@@ -20,9 +20,13 @@ sudo apt update && sudo apt install -y \
   python3-flake8 \
   python3-pip \
   python3-pytest-cov \
-  python3-rosdep \
+  python3-rosdistro\
+  python3-rospkg \
+  python3-rosdep-modules \  
   python3-setuptools \
   python3-vcstool \
+  python3-catkin-pkg \
+  python3-rosdep \
   wget
 # install some pip packages needed for testing
 python3 -m pip install -U \
